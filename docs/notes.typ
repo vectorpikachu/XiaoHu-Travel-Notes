@@ -3,25 +3,17 @@
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
 #show: project.with(
-  title: "Tauri + Leptops",
+  title: "Notes on Tauri + Leptos",
   authors: (
     "VectorPikachu",
   ),
-  date: "February 23, 2025",
+  date: datetime.today().display("[month repr:long] [day], [year]"),
 )
 
 // We generated the example code below so you can see how
 // your document will look. Go ahead and replace it with
 // your own content!
 
-= Introduction
-#lorem(60)
+= Leptos
 
-== In this paper
-#lorem(20)
-
-=== Contributions
-#lorem(40)
-
-= Related Work
-#lorem(500)
+Client-side rendering (CSR) with Trunk. In CSR mode, Trunk compiles your Leptos app to WebAssembly (WASM) and runs it in the browser like a typical Javascript single-page app (SPA). 
