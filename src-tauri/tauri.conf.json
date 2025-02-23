@@ -13,7 +13,7 @@
     "withGlobalTauri": true,
     "windows": [
       {
-        "title": "xiaohu-travel-notes",
+        "title": "XiaoHu Travel Notes",
         "width": 800,
         "height": 600
       }

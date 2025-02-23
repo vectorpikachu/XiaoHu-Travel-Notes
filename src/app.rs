@@ -2,6 +2,7 @@ use leptos::task::spawn_local;
 use leptos::{ev::SubmitEvent, prelude::*};
 use serde::{Deserialize, Serialize};
 use wasm_bindgen::prelude::*;
+use thaw::*; // Import the `thaw` crate
 
 #[wasm_bindgen]
 extern "C" {
@@ -40,18 +41,11 @@ pub fn App() -> impl IntoView {
     };
 
     view! {
-        <main class="container">
-            <h1>"Welcome to Tauri + Leptos"</h1>
-
+        <ConfigProvider>
+            <h1>"欢迎来到《小胡游记》"</h1>
             <div class="row">
-                <a href="https://tauri.app" target="_blank">
-                    <img src="public/tauri.svg" class="logo tauri" alt="Tauri logo"/>
-                </a>
-                <a href="https://docs.rs/leptos/" target="_blank">
-                    <img src="public/leptos.svg" class="logo leptos" alt="Leptos logo"/>
-                </a>
+                <img src="public/小胡游记.svg" class="logo app" alt="App logo" />
             </div>
-            <p>"Click on the Tauri and Leptos logos to learn more."</p>
 
             <form class="row" on:submit=greet>
                 <input
@@ -61,7 +55,10 @@ pub fn App() -> impl IntoView {
                 />
                 <button type="submit">"Greet"</button>
             </form>
+            <Button appearance=ButtonAppearance::Primary>
+                "Primary"
+            </Button>
             <p>{ move || greet_msg.get() }</p>
-        </main>
+        </ConfigProvider>
     }
 }

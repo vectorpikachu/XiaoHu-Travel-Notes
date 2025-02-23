@@ -9,6 +9,7 @@
   set text(font: ("Latin Modern Roman", "Source Han Serif SC"), lang: "en")
   show math.equation: set text(weight: 400)
   show raw: set text(font: ("ComicShannsMono Nerd Font", "LXGW WenKai Mono"))
+  show link: set text(fill: rgb("#433af4"))
 
   // Title row.
   align(center)[

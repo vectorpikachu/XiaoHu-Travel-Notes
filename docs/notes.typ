@@ -17,3 +17,5 @@
 = Leptos
 
 Client-side rendering (CSR) with Trunk. In CSR mode, Trunk compiles your Leptos app to WebAssembly (WASM) and runs it in the browser like a typical Javascript single-page app (SPA). 
+
+#link("https://thawui.vercel.app/")[Thaw UI].
